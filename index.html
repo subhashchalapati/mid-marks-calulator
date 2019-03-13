@@ -1,0 +1,103 @@
+
+
+<html>
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+ <video id ="video-bg-elem" playsinline autoplay muted loop >                     
+        <source src="bg.mp4" type="video/mp4">
+ </video>
+
+<div id="inputs" >   
+        <table id="t1">
+                <tr>
+                  <th>mid 1 marks</th>
+                  <th>mid 2 marks</th> 
+                  <th>mid 3 marks</th>
+                </tr>
+                <tr>
+                  <th><input type="number" maxlength ="2" pattern="[0-8]" id="mid1"  name = "mid1" value = "0" maxlength = "2" min="0" max="30"/>&emsp;&emsp;&emsp; </th>
+                  <th><input type="number" id="mid2" name = "mid2" value = "0" maxlength = "2" min="0" max="30"/>&emsp;&emsp;        </td>
+                  <th><input type="number" id="mid3" name = "mid3" value = "0" maxlength = "2" min="0" max="30"/>&emsp;&emsp;        </th>
+                </tr>
+        </table> 
+        <div id="possition">
+        <table id="t2" style="float:left; text-align:center;" >
+            <tr>             <h2 style="font-style:oblique">   higest 
+                    <input type="number" id="demo4"  placeholder="higest" readonly>  </h2>  
+            </tr>
+            <tr>              <h2 style="font-style:oblique">   middle 
+                
+                    <input type="number" id="demo5"  placeholder="middle" readonly>  </h2>
+            </tr>
+            <tr>             <h2 style="font-style:oblique">    lowest  
+                    <input type="number" id="demo6"  placeholder="lowest" readonly>  </h2>  
+                      
+            </tr>
+            <tr>
+                <div id="reset">
+
+                        <input type="button"value="new one" id="scriptBox" type="text" onclick = refresh() />
+                        
+                </div>
+                
+            </tr>
+        </table>
+        </div>
+</div>
+<br>
+<br>
+<br>
+<div id="result">
+        <input type="number" id="res" style="width:350px;text-align:center;border-style:double;border-color:brown" placeholder="come hear to see your result" name = "res"  maxlength = "2"
+               min="0" max="30" onmouseover="myFunction(mid1,mid2,mid3)" readonly> &emsp;&emsp;&emsp;
+        <!-- <input type="submit"> -->
+        <br><br><br> 
+        
+        <button onclick="printpage()" id="btn1">Print this page       </button>
+        <button id = "btn2" onclick="" type="file" onchange="handleFiles(this.files)">
+                uplode background image
+        </button>
+        
+</div>
+
+
+
+
+<!-- <div id="reset">
+
+        <input type="button"value="new one" id="scriptBox" type="text" onclick = refresh() />
+        
+</div> -->
+
+
+
+
+<div id="outputs">
+<p id="demo"> </p>
+<p id="demo1"> </p>
+<p id="demo2"> </p>
+<p id="demo3"> </p>
+<!-- <p id="demo4"> </p>
+<p id="demo5"> </p>-->
+<p id="demo6"> </p> 
+<p id="demo7"> </p>
+</div>
+
+<div id="snackbar">all the marka are same.</div>
+<div id="snackbar">please enter under 30 marks</div>
+
+
+
+<br>
+           <!-- <input type="number" id="res" placeholder="Do you see your result" name = "res"  maxlength = "2" 
+                   min="0" max="30" onmouseover="myFunction(mid1,mid2,mid3)">-->
+            <br><br>
+            
+<!-- <img src="https://royalenfield.com/mobile/classicmatte/images/stealth-black.png" > -->
+      </form>
+   </body>
+
+</html>
